@@ -4,13 +4,13 @@ import java.math.BigDecimal;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
+import org.springframework.hateoas.ResourceSupport;
 import org.springframework.data.annotation.PersistenceConstructor;
 import lombok.Data;
 
 @Document
 @Data
-public class Product {
+public class Product extends ResourceSupport {
 	
 	@Id
 	private String productId;

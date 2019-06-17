@@ -2,11 +2,12 @@ package com.ecommerce.voucher.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.hateoas.ResourceSupport;
 
 import lombok.Data;
 
 @Document @Data
-public class Address {
+public class Address extends ResourceSupport{
 	
 	@Id
 	private String addressId;

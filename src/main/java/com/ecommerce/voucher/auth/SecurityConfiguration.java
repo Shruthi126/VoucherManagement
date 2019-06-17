@@ -20,7 +20,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 		 http
          .csrf().disable()
-         .authorizeRequests().anyRequest().authenticated()
+        .authorizeRequests().anyRequest().authenticated()
          .and()
          .httpBasic().realmName("Voucher")
          .authenticationEntryPoint(authEntryPoint)

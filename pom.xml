@@ -19,13 +19,6 @@
 	</properties>
 
 	<dependencies>
-	<!-- You seem to be trying to mix JPA, which is primarily intended for relational datastores,
-		 with MongoDB, which is an "unrelated" document store. 
-		 Drop the dependency on spring-boot-starter-data-jpa (you simply don't need it)  -->
-		<!-- <dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-mongodb</artifactId>
@@ -38,13 +31,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-hateoas</artifactId>
 		</dependency>
-	<!-- After removing this post wont work until it is permitted
-	https://stackoverflow.com/questions/54758872/spring-boot-security-postman-gives-401-unauthorized
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-client</artifactId>
-		</dependency> -->
-		
 		<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
@@ -65,6 +51,24 @@
 		    <groupId>org.projectlombok</groupId>
 		    <artifactId>lombok</artifactId>
 		    </dependency>
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger2</artifactId>
+		    <version>2.9.2</version>
+		</dependency> 
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-swagger-ui</artifactId>
+		    <version>2.9.2</version>
+		</dependency>  
+		<!-- https://mvnrepository.com/artifact/io.springfox/springfox-core -->
+		<dependency>
+		    <groupId>io.springfox</groupId>
+		    <artifactId>springfox-core</artifactId>
+		    <version>2.9.2</version>
+		</dependency> 
+		
+		    
 	</dependencies>
 
 	<build>
